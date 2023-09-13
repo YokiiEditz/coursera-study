@@ -1,16 +1,66 @@
 *{
+    margin: 0;
+    padding: 0;
     color:black;
-    font-size: 24px;
+    font-size: 18px;
     font-family:'Open Sans', sans-serif;
     box-sizing: border-box;
 }
-
+body{
+    
+}
 #heading{
     text-align: center;
-    margin-top: 30px;
-    margin-bottom: 50px;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    font-weight: bold;
 }
-
-.col-lg-4{
+.container-fluid{
+    border: 1px solid none;
+}
+.row{
+    padding: 20px;
+    border: 1px solid none;
+    box-sizing: border-box;
+}
+/* first table design starts here*/
+#one, #two, #three{
+    margin: 0;
+    padding: 0;
     border: 1px solid black;
+    background-color: grey;
+    clear:both;
 }
+#one-span, #two-span, #three-span{
+    border: 1px solid black;
+    float: right;
+}
+p{
+    padding: 15px;
+    clear: both;
+}
+#one-span{
+    width: 30%;
+    background-color: pink;
+    text-align: center;
+} 
+#two-span{
+    width: 30%;
+    background-color: #dd1717;
+    text-align: center;} 
+#three-span{
+    width: 30%;
+    background-color: beige;
+    text-align: center;}
+
+
+/* @media (max-width:767px)
+{
+    #one{
+        width: 33.3%;
+    }
+    #two{        
+        width: 33.3%;
+    }
+} */
+
