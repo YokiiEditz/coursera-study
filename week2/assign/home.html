@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+*{
+box-sizing:border-box;
+}
+.container {
+  width: 100%;
+  margin:0px;
+  padding:0px;
+  border: 1px solid #c3c3c3;
+  overflow:auto;
+  position :relative;
+}
+.row{
+display:flex;
+overflow: auto;
+}
+
+.col-lg-4 {
+    width: 100%;
+    height: auto;
+  margin: 20px;
+  padding: 0;
+  overflow:auto;
+  border: 1px solid black;
+  position: relative;
+  background-color: grey;
+}
+#box{
+    width: 25%;
+    height: auto;
+    background-color: aquamarine;
+    padding: 5px;
+    float: right;
+    border: 1px solid black;
+    text-align: center;
+}
+p{
+    padding-left: 15px;
+    padding-right: 15px;
+    clear: both;
+    text-align: justify;
+}
+
+/*
+@media (min-width:1200px){
+#main {
+overflow:scroll;
+}
+} */
+
+</style>
+</head>
+<body>
+
+<h1>The flex-direction Property</h1>
+
+<div class="container">
+<div class="row">
+    <div class="col-lg-4">
+      <span id="box">Title</span>
+      <p>and Colors: Each section should have a background color set to some color (of your choosing). Set the background color of each section title region to some unique color (of your choosing). Make sure that the background color still allows the user to view the text in the section and section title regions. Depending on the color you choose. </p>
+    </div>
+
+    <div class="col-lg-4">
+      <span id="box">Title</span>
+      <p>and Colors: Each section should have a background color set to some color (of your choosing). Set the background color of each section title region to some unique color (of your choosing). Make sure that the background color still allows the user to view the text in the section and section title regions. Depending on the color you choose. </p>
+    </div>
+
+    <div class="col-lg-4">
+      <span id="box">Title</span>
+      <p>and Colors: Each section should have a background color set to some color (of your choosing). Set the background color of each section title region to some unique color (of your choosing). Make sure that the background color still allows the user to view the text in the section and section title regions. Depending on the color you choose. </p>
+    </div>
+
+</div></div>
+
+
+</body>
+</html>

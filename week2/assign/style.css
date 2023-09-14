@@ -7,51 +7,65 @@
     box-sizing: border-box;
 }
 #heading{
-    text-align: center;
-    margin-top: 25px;
-    margin-bottom: 30px;
-    font-weight: bold;
+  text-align: center;
+  margin: 30px;
+  font-size: 2em;
 }
 .container-fluid{
-    padding: 10px;
-    border: 1px solid red;
-    overflow: hidden;
+  margin: 50px;
+  padding: 80px;
+  border: 1px solid red;
+  background-color: blue;
 }
 .row{
-    padding: 10px;
-    border: 1px solid blue;
-    box-sizing: border-box;
+  margin: 10px;
+  padding: 10px;
+  border: 2px solid green;
+  background-color: greenyellow;
 }
-/* first table design starts here*/
-#one, #two, #three{
-    margin: 0px;
-    padding: 0;
-    border: 1px solid black;
-    background-color: grey;
+#content > .col{
+  padding: 0px;
+  margin: 10px;
+  border: 3px solid black;
+  background-color: white;
+  box-sizing: border-box;
+}
+.col > p{
+  margin: 0px;
+  padding: 15px;
+  clear: both;
+  color: brown;
+  text-align: justify;
+}
+#content > .col > span{
+  padding: 3px;
+  width: 30%;
+  float: right;
+  border: 2px solid black;
+  border-style: none none solid solid;
+  text-align: center;
+}
+span.box1{
+  background-color: pink;
+}
+span.box2{
+  background-color: maroon;
+  color: white;
+}
+span.box3{
+  background-color: blanchedalmond;
+}
+@media (max-width:767px)
+{
+  #content > .col{
+    width: 35%;
+  }
 }
 
-#one-span, #two-span, #three-span{
-    border: 1px solid black;
-    float: right;
-}
-p{
-    padding: 15px;
-    clear: both;
-    text-align: justify;
-}
-#one-span{
-    width: 30%;
-    background-color: pink;
-    text-align: center;
-} 
-#two-span{
-    width: 30%;
-    background-color: #dd1717;
-    text-align: center;} 
-#three-span{
-    width: 30%;
-    background-color: beige;
-    text-align: center;}
+
+
+
+
 
 
 /* @media (max-width:767px)
