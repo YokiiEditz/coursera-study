@@ -29,13 +29,13 @@ div.container-fluid{
   background-color: rgb(58, 58, 103);
 }
 div > .row{
-  width: auto;
+  width: 100%;
   margin: 10px;
   padding: 10px;
   border: 4px solid green;
   background-color: grey;
   display: flex;
-  overflow: auto;
+  flex-wrap: nowrap;
   box-sizing: border-box;
 }
 .col-lg-4{
