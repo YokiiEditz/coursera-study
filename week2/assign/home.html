@@ -6,22 +6,27 @@
 box-sizing:border-box;
 }
 .container {
-  width: 100%;
-  margin:0px;
-  padding:0px;
+  width: auto;
+  height: auto;
+  margin: 10px;
+  padding: 10px;
+
   border: 1px solid #c3c3c3;
   overflow:auto;
   position :relative;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 .row{
 display:flex;
 overflow: auto;
 }
-
 .col-lg-4 {
-    width: 100%;
-    height: auto;
-  margin: 20px;
+  width: auto;
+  height: auto;
+  margin: 10px;
   padding: 0;
   overflow:auto;
   border: 1px solid black;
@@ -42,14 +47,31 @@ p{
     padding-right: 15px;
     clear: both;
     text-align: justify;
+} 
+
+/********** Large devices only **********/
+@media (min-width: 1200px) 
+{
+
 }
 
-/*
-@media (min-width:1200px){
-#main {
-overflow:scroll;
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px)
+{
+
 }
-} */
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) 
+{
+
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) 
+{
+
+}
 
 </style>
 </head>
